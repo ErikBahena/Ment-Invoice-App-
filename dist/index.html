@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.b1875992.png">
+
+    <title>Ment Invoice app</title>
+    
+    <!-- Google Fonsts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- My Css Styling -->
+    <link rel="stylesheet" href="/index.bb6ac6cb.css" type="text/css">
+
+    <!-- My JS -->
+    <script defer="" src="/index.264e9f96.js"></script>
+  </head>
+  <body>
+
+      <div class="nav-bar-container">
+        <div class="nav-logo-container">
+          <div class="nav-logo-container-bg">
+            <img src="/logo.b306f93c.svg" alt="company logo" class="nav-logo">
+            <div class="nav-logo-container-bg-cut-out"></div>
+          </div>
+        </div>
+
+        <div class="nav-mode-user-container">
+          <div class="dark-light-mode-btn-container">
+            <img src="/icon-moon.c8871b89.svg" alt="dark or light color mode" class="moon-icon">
+          </div>
+          <div class="nav-divider-thin"></div>
+          <div class="avatar-image-container">
+            <img src="/image-avatar.353f7422.jpg" alt="user photo" class="avatar-image">
+          </div>
+        </div>
+      </div>
+
+
+        <div class="invoice-control-container">
+          <div class="invoice-text" id="media-fz-h3">
+            <h2 class="no-marg-padd">Invoices</h2>
+            <div class="amount-of-invoices body-1 no-marg-padd">
+              No Invoices
+            </div>
+          </div>
+          <!--  -->
+          <div class="filter-and-new-invoice-btn-container">
+            <div class="filter-text-and-filter-btn-container">
+              <h4 class="filter-text">
+                Filter
+                <res-ignore>by status</res-ignore>
+              </h4>
+              <img src="/icon-arrow-down.c87a940b.svg" alt="filter invoices button" class="filter-by-status filter-by-status-btn">
+              <div class="filter-by-status-container">
+
+                <div class="filter-draft-container checkbox-container">
+                  <input type="checkbox" id="filter-draft" name="filter as draft" value="draft">
+                  <span class="checkmark"></span>
+                  <h4 class="filter-by-draft-text no-marg-padd">Draft</h4>
+                </div>
+
+                <div class="filter-pending-container checkbox-container">
+                  <input type="checkbox" id="filter-pending" name="filter-as-pending" value="pending">
+                  <span class="checkmark"></span>
+                  <h4 class="filter-by-pending-text no-marg-padd">Pending</h4>
+                </div>
+
+                <div class="filter-paid-container checkbox-container">
+                  <input type="checkbox" id="filter-paid" name="filter-as-paid" value="paid">
+                  <h4 class="filter-by-paid-text no-marg-padd">Paid</h4>
+                  <span class="checkmark"></span>
+                </div>
+              </div>
+            </div>
+            <div class="new-invoice-btn-container-bg">
+              <div class="new-invoice-cirle">
+                <img src="/icon-plus.e5524883.svg" alt="" class="plus-icon">
+              </div>
+              <h4 class="new-text">New <res-ignore>Invoice<res-ignore></res-ignore></res-ignore></h4>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+
+
+      <div class="invoice-view-container-populate">
+        <!-- populate with js -->
+      </div>
+
+
+      <section class="view-invoices">
+        <div class="view-invoice-container">
+          <div class="go-back-arrow-and-text-container">
+            <img src="/icon-arrow-left.9d9519bf.svg" alt="go back button" class="go-back-arrow-icon-btn">
+            <h4 class="go-back-text no-marg-padd">
+              <div class="go-back-text">Go Back</div>
+            </h4>
+          </div>
+          <div class="status-text-mobile-container">
+            <div class="status-text-mobile body-1">Status</div>
+            <div class="status-visual-container status-visual-container-mobile">
+              <div class="status-circle"></div>
+              <h4 class="state-text">Pending</h4>
+            </div>
+          </div>
+          <div class="view-invoice-status-edit-delete-container">
+            <!-- generate with js -->
+          </div>
+          <div class="invoice-description-container"></div>
+        </div>
+      </section>
+
+      <!-- edit and delete buttons at the bottom of the screen while viewing invoice -->
+
+      <div class="edit-delete-markaspaid-container-mobile"> 
+        
+      </div>
+  
+      <div class="modal-background">
+        <div class="delete-invoice-popup-modal">
+          <h2 class="confirm-deletion-text no-marg-padd">Confirm Deletion</h2>
+          <div class="are-you-sure-text body-1">
+            Are you sure you want to delete invoice
+            <deletion-id class="deltion-invoice-id">#84djf2</deletion-id>
+            This action cannot be undone.
+          </div>
+          <div class="delete-invoice-buttons">
+            <div class="cancel-deletion-btn-container">
+              <h4 class="cancel-deletion-btn-text no-marg-padd">Cancel</h4>
+            </div>
+            <div class="delete-invoice-btn-container">
+              <h4 class="delete-invoice-btn-text no-marg-padd">Delete</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="new-invoice-container-background"></div>
+      <div class="new-invoice-form-container">
+        <div class="new-invoice-form-inner-container">
+          <h1 class="new-invoice-text no-marg-padd">New Invoice</h1>
+        
+
+          <form action="" class="new-invoice-form">
+            <h4 class="bill-from-text no-marg-padd">Bill From</h4>
+            <div class="bill-from-street-address-container">
+              <div class="bill-from-street-address-label body-1">Street Address</div>
+              <input type="text" class="long-input-length" name="bill-from-street-address" id="bill-from-street-address">
+            </div>
+            
+            <div class="city-postal-country-container">
+              <div class="bill-from-city-container">
+                <div class="bill-from-city-text body-1">City</div>
+                <input type="text" class="small-input-length" name="bill-from-city" id="bill-from-city">
+              </div>
+
+              <div class="bill-from-postal-code-container">
+                <div class="bill-from-postal-code-text body-1">Postal Code</div>
+                <input type="text" class="small-input-length" name="bill-from-postal-code" id="bill-from-postal-code">
+              </div>
+
+              <div class="bill-from-country-container">
+                <div class="bill-from-country-text body-1">Country</div>
+                <input type="text" class="small-input-length" name="bill-from-country" id="bill-from-country">
+              </div>
+            </div>
+
+            <h4 class="bill-to-text Form no-marg-padd">Bill To</h4>
+            <div class="bill-to-clients-name-container">
+              <div class="bill-to-clients-name-text body-1">Client's Name</div>
+              <input type="text" class="long-input-length" name="bill-to-clients-name" id="bill-to-clients-name">
+            </div>
+            
+            <div class="bill-to-clients-email-container">
+              <div class="bill-to-clients-email-text body-1">Client's Email</div>
+              <input type="text" class="long-input-length" name="bill-to-clients-email" id="bill-to-clients-email">
+            </div>
+          
+            <div class="bill-to-clients-street-address-container">
+              <div class="bill-to-clients-street-address-text body-1">Street Address</div>
+              <input type="text" class="long-input-length" name="bill-to-clients-street-address" id="bill-to-clients-street-address">
+            </div>
+            
+
+            <div class="bill-from-city-postal-country-container">
+              <div class="bill-to-city-container">
+                <div class="bill-to-city-text body-1">City</div>
+                <input type="text" class="small-input-length" name="bill-to-city" id="bill-to-city">
+              </div>
+
+              <div class="bill-to-postal-code-container">
+                <div class="bill-to-postal-code-text body-1">Postal Code</div>
+                <input type="text" class="small-input-length" name="bill-to-postal-code" id="bill-to-postal-code">
+              </div>
+
+              <div class="bill-to-country-container">
+                <div class="bill-to-country-text body-1">Country</div>
+                <input type="text" class="small-input-length" name="bill-to-country" id="bill-to-country">
+              </div>
+            </div>
+
+            <div class="invoice-date-payment-terms-container-to-break">
+              <div class="invoice-date-container">
+                <div class="invoice-date-text body-1">Due Date</div>
+                <input type="date" class="custom-length-small-input" name="invoice-date" id="invoice-date">
+              </div>
+  
+              <div class="payment-terms-container">
+                <div class="payment-terms-text body-1">Payment Terms</div>
+                <input type="text" id="payment-terms" class="custom-length-small-input" placeholder="Net 30 Days" name="payment-terms">
+              </div>
+            </div>
+
+            <div class="project-description-container">
+              <div class="project-description-text body-1">Project Description</div>
+              <input type="text" class="long-input-length" name="project-description" id="project-description">
+            </div>
+            
+
+            <h1 class="item-list-text no-marg-padd">Item List</h1>
+
+            <div class="item-list-container-populate column">
+
+              <div class="item-container">
+                  <div class="item-name-container">
+                    <div class="item-name-text body-1">Item Name</div>
+                    <input type="text" name="item-name" id="item-name">
+                  </div>
+                  <div class="item-quantity-container">
+                    <div class="item-quantity-text body-1">QTY.</div>
+                    <input type="text" name="item-quantity" id="item-quantity">
+                  </div>
+                  <div class="item-price-container">
+                    <div class="item-price-text body-1">Price</div>
+                    <input type="text" name="item-price" id="item-price">
+                  </div>
+                  <div class="total-text-total-price-container">
+                    <div class="total-text-form body-1">Total</div>
+                    <h4 class="total-price no-marg-padd">$ 0.00</h4>
+                  </div>
+                  <div class="delete-btn-container">
+                    <img src="/icon-delete.c7dfae46.svg" alt="delete item button" class="delete-btn-img">
+                  </div>
+                </div>
+              </div>
+
+              <div class="add-new-item-btn-container">
+                <h4 class="add-new-item-text">+ Add New Item</h4>
+              </div>
+
+              <div class="body-1 all-fields-text">- All fields must be added</div>
+
+              <div class="discard-save-as-draft-save-and-send-container">
+                <div class="discard-btn-container">
+                  <h4 class="discard-text no-marg-padd">Discard</h4>
+                </div>
+                <div class="discard-save-btns-container-to-right">
+                  <button class="save-as-draft--btn-container" id="submit" type="submit">
+                    <h4 class="save-as-draft-text no-marg-padd">Save as Draft</h4>
+                  </button>
+                  <div class="save-and-send-btn-container">
+                    <h4 class="save-and-send-text no-marg-padd">Save & Send</h4>
+                  </div>  
+                </div>
+              </div>
+            </form></div>
+
+            <div class="mobile-scrolling-cover"></div>
+
+            <div class="footer-mobile-buttons-container-new-form">
+              <div class="discard-save-as-draft-save-and-send-container-display-at-media-mobile">
+                <div class="discard-btn-container-media-mobile">
+                  <h4 class="discard-text-media-mobile no-marg-padd">Discard</h4>
+                </div>
+                <div class="discard-save-btns-container-to-right-media-mobile">
+                  <button class="save-as-draft--btn-container-media-mobile" id="submit" type="submit">
+                    <h4 class="save-as-draft-text-media-mobile no-marg-padd">Save as Draft</h4>
+                  </button>
+                  <div class="save-and-send-btn-container-media-mobile">
+                    <h4 class="save-and-send-text-media-mobile no-marg-padd">Save & Send</h4>
+                  </div>  
+                </div>
+              </div>
+            </div>
+          
+
+      </div>
+  </body>
+</html>
