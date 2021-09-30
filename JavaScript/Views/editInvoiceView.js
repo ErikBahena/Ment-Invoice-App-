@@ -1,4 +1,4 @@
-import deleteBtnImg from "url:../../assets/icon-delete.svg";
+import deleteBtnImg from "../../assets/icon-delete.svg";
 import { nanoid } from "nanoid";
 import helpers from "../helpers.js";
 

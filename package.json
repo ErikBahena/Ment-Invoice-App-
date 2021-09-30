@@ -1,20 +1,27 @@
 {
-  "name": "testing-folder",
+  "name": "ment-invoice-app-",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
+  "description": "Web Based Invoice App",
+  "main": "./JavaScript/controller.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html",
-    "build": "CI= npm run build"
+    "build": "parcel build index.html"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErikBahena/Ment-Invoice-App-.git"
+  },
+  "author": "Erik Bahena",
   "license": "ISC",
-  "dependencies": {
-    "nanoid": "^3.1.25"
+  "bugs": {
+    "url": "https://github.com/ErikBahena/Ment-Invoice-App-/issues"
   },
+  "homepage": "https://github.com/ErikBahena/Ment-Invoice-App-#readme",
   "devDependencies": {
-    "@parcel/transformer-image": "^2.0.0-rc.0",
-    "parcel": "^2.0.0-rc.0"
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "assets": "^3.0.1",
+    "nanoid": "^3.1.28"
   }
 }

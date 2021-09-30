@@ -1,7 +1,7 @@
 import helpers from "../helpers.js";
 import InvoiceDetailsView from "./invoiceDetailsView.js";
-import noInvoicesImage from "url:../../assets/illustration-empty.svg";
-import invoiceDetailBtnImg from "url:../../assets/icon-arrow-right.svg";
+import noInvoicesImage from "../../assets/illustration-empty.svg";
+import invoiceDetailBtnImg from "../../assets/icon-arrow-right.svg";
 
 class InvoiceViewPanel {
   invoiceControlContainer = document.querySelector(

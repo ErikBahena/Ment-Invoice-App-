@@ -1,4 +1,4 @@
-export default helpers = {
+export const helpers = {
   formatDate: (date) => {
     const options = { month: "short", day: "numeric", year: "numeric" };
     // returning a formatted date based on the date provided
@@ -14,3 +14,4 @@ export default helpers = {
     return JSON.parse(localStorage.getItem(name).replaceAll("%23", "#"));
   },
 };
+export default helpers
